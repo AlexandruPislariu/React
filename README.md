@@ -9,3 +9,14 @@ React front-end framework
 # React and JSX
   * React components
   * Babel (JSX -> VanillaJS)
+  
+# Create React App
+  * Webpack
+  * npm init react-app my-app
+  * Import Statements
+  
+# Props
+  * Immutable data passed to the components
+  * defaultProps
+  * PropTypes
+  * props.children
