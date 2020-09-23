@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js" integrity="sha512-kp7YHLxuJDJcOzStgd6vtpxr4ZU9kjn77e6dBsivSz+pUuAuMlE2UTdKB7jjsWT84qbS8kdCWHPETnP/ctrFsA==" crossorigin="anonymous"></script>
+    <title>Random Box JSX</title>
+</head>
+<body>
+    <div id="app"></div>
+    <script type="text/babel">
+        class RandomBox extends React.Component{
+            render()
+            {   
+                const randomColors = ['green', 'blue', 'red'];
+                const randomSize = ['50px', '2em', '40px'];
+                return  (<div style={{width: '400px', height: '400px', backgroundColor: randomColors[Math.floor(Math.random() * 4)]}}>
+                            <h2 style={{fontSize: randomSize[Math.floor(Math.random() * 4)]}}>RandomBox</h2>
+                        </div>);
+            }
+        }
+
+        ReactDOM.render(<RandomBox />, document.getElementById("app"));
+    </script>
+</body>
+</html>
