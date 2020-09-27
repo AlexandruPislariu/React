@@ -20,3 +20,12 @@ React front-end framework
   * defaultProps
   * PropTypes
   * props.children
+  
+# State
+  * Data in application which can be changed
+  * setState -> Aynchronous, change state
+  * Pure Functions (repeatable(same inputs, same outputs)) => All changes to this.state should be pure functions
+  
+# React Component Architecture
+  * State is shared as a prop from a parent component down to a child component
+  * Stateless Functional Component
